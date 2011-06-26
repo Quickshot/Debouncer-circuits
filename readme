@@ -1,7 +1,13 @@
 This project contains several different kinds of debouncing circuits done in VHDL.
 
-Currently, only rising edge debouncer is implemented. In this debouncer, output 
-goes directly to one when the input signal goes high, and stays there until input
-has been zero for at least the number of clock cycles defined.
+Following debouncers are implemented:
+
+Rising edge debouncer: In this debouncer, output goes directly to one when the
+input signal goes high, and stays there until input has been zero for at least
+the number of clock cycles defined.
+
+Sampling debouncer: Samples the input signal at predetermined intervals. Output
+is set to input value when the current sample and the previous sample are same, otherwise
+current output value is held.
 
 All files licensed under PUBLIC DOMAIN.
