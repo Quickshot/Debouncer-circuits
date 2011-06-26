@@ -1,4 +1,3 @@
--- Simple debouncing component in 2 variations.
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.NUMERIC_STD.all;
@@ -6,7 +5,7 @@ use ieee.NUMERIC_STD.all;
 -- Debouncer which goes immediately to 1 on rising edge of input.
 -- Goes back to zero if input is still zero after n clock pulses.
 -- With default value of cycles, debouncer occupies 18 slices in
--- xc3s700an device.
+-- xc3s700an FPGA.
 entity rising_debounce is
 	generic(
 		-- How many clock cycles to wait for transition (2^N cycles).
